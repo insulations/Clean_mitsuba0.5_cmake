@@ -6,6 +6,8 @@
 
 Run `cmake -B build -G "Visual Studio 12 2013" -A x64`
 
+After compiling, copy the files from the **'dll_dependencies'** directory to the generated directory of 'mitsuba.exe'.
+
 ### The original Mitsuba repository
 
 https://github.com/mitsuba-renderer/mitsuba
