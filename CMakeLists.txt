@@ -2,10 +2,6 @@
 # Tested only on Windows and Linux (Ubuntu 10.10)
 cmake_minimum_required(VERSION 2.8.3 FATAL_ERROR)
 
-#Don't use pch
-set(MTS_USE_PCH OFF)
-set(MTS_USE_PCH OFF)
-set(MTS_USE_PCH OFF)
 # Internal variable to know whether this is the first time CMake runs
 if (NOT DEFINED MTS_CMAKE_INIT)
   set(MTS_CMAKE_INIT ON CACHE INTERNAL "Is this the initial CMake run?")

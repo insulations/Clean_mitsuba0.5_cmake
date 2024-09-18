@@ -21,7 +21,7 @@
 #                  source1 source2 ... sourceN)
 #
 #=============================================================================
-# Edgar Velázquez-Armendáriz, Cornell University (cs.cornell.edu - eva5)
+# Edgar Velï¿½zquez-Armendï¿½riz, Cornell University (cs.cornell.edu - eva5)
 # Distributed under the OSI-approved MIT License (the "License")
 # 
 # Copyright (c) 2011 Program of Computer Graphics, Cornell University
@@ -51,15 +51,16 @@ set (PCH_MSVC  FALSE)
 set (PCH_GCC   FALSE)
 set (PCH_CLANG FALSE)
 
-if (MSVC OR (WIN32 AND CMAKE_CXX_COMPILER_ID MATCHES "Intel"))
-  set (PCH_MSVC  TRUE)
-elseif (CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-  set (PCH_CLANG TRUE)
-elseif (CMAKE_CXX_COMPILER_ID MATCHES "GNU")
-  set (PCH_GCC   TRUE)
-elseif (NOT WIN32 AND CMAKE_CXX_COMPILER_ID MATCHES "Intel")
-  set (PCH_INTEL TRUE)
-endif ()
+# Close PCH
+# if (MSVC OR (WIN32 AND CMAKE_CXX_COMPILER_ID MATCHES "Intel"))
+#   set (PCH_MSVC  TRUE)
+# elseif (CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+#   set (PCH_CLANG TRUE)
+# elseif (CMAKE_CXX_COMPILER_ID MATCHES "GNU")
+#   set (PCH_GCC   TRUE)
+# elseif (NOT WIN32 AND CMAKE_CXX_COMPILER_ID MATCHES "Intel")
+#   set (PCH_INTEL TRUE)
+# endif ()
 
 
 
